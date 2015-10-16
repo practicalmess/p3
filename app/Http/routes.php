@@ -13,6 +13,8 @@
 
 //Rewrite 'welcome' view to point to master template extended by index template
 
+use joshtronic\LoremIpsum;
+
 Route::get('/', function () {
     return view('index');
 });
@@ -22,7 +24,7 @@ Route::get('/test', function() {
 });
 
 Route::get('/lorem', 'LoremController@getOptions');
-Route::post('/lorem', 'LoremController@postGenerate');
+Route::post('/lorem/result', 'LoremController@postGenerate');
 
 Route::get('/lorem-test/{number}', function($number) {
 	$lipsum = new joshtronic\LoremIpsum();
@@ -30,6 +32,6 @@ Route::get('/lorem-test/{number}', function($number) {
 });
 
 Route::get('/random-users', 'UsersController@getOptions');
-Route::post('/random-users', 'UsersController@postGenerate');
+Route::post('/random-users/result', 'UsersController@postGenerate');
 
 ?>
