@@ -1,0 +1,15 @@
+.nav-block {
+	border: 1px solid black;
+	background-color: #f2dede;
+}
+
+.nav-block a {
+	color: white;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
