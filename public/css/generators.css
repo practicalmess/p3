@@ -1,0 +1,12 @@
+
+.options {
+	padding-left: 2em;
+}
+
+/*Styling for div with generated Lorem Ipsum text*/
+
+.lorem-ipsum {
+	border: 1px solid grey;
+	margin: 1em 0;
+	padding: .5em;
+}
