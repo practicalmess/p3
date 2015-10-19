@@ -53,6 +53,10 @@
 		@foreach($users as $user)
 			<li><strong>{{$user['name']}}</strong>
 				<br>
+				@if(isset($user['address']))
+					{{$user['address']}}
+					<br>
+				@endif
 				@if(isset($user['phone']))
 					{{$user['phone']}}
 					<br>

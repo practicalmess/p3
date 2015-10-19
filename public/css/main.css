@@ -11,7 +11,7 @@ html {
 
 body {
     width: 80%;
-    margin: 0 auto 30px auto !important;
+    margin: 0 auto 3.5em auto !important;
 }
 
 .container {
@@ -30,7 +30,7 @@ footer {
     position: absolute;
     left:0;
     bottom:0;
-    height:30px;
+    height:2em;
     width:100%;
     background-color:#ccc;
     text-align:center;
