@@ -12,8 +12,19 @@ class LoremController extends Controller {
 	}
 
 	public function postGenerate(Request $request) {
+
+		$this->validate(
+			$request,
+			['type'=>'required',
+			 'amount'=>'required|numeric|max:99']
+			);
+
+
 		$lipsum = new LoremIpsum();
-		return $lipsum->paragraphs($request->input('paragraphs'));
+		$type = $request->input('type');
+		$amount = $request->input('amount');
+		return view('lorem.options')->with('type', $type)->with('amount', $amount)->with('lipsum',$lipsum);
+
 	}
 
 

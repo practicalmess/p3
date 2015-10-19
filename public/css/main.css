@@ -1,13 +1,27 @@
 /* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
   box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 /* End Box Sizing */
 
+body {
+    width: 80%;
+    margin: 0 auto 30px auto !important;
+}
+
+h1 {
+    font-family: 'Courgette', 'Courier New', cursive !important;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
 /*Sticky footer*/
+
 footer {
     position: absolute;
     left:0;
@@ -17,4 +31,8 @@ footer {
     background-color:#ccc;
     text-align:center;
     padding:5px;
+}
+
+a {
+    font-weight: bold;
 }

@@ -1,11 +1,8 @@
 .nav-block {
 	border: 1px solid black;
-	background-color: #f2dede;
+	background-color: rgba(242, 222, 232, 0.27);
 }
 
-.nav-block a {
-	color: white;
-}
 
 .row-eq-height {
   display: -webkit-box;

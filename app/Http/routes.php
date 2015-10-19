@@ -24,14 +24,11 @@ Route::get('/test', function() {
 });
 
 Route::get('/lorem', 'LoremController@getOptions');
-Route::post('/lorem/result', 'LoremController@postGenerate');
+Route::post('/lorem', 'LoremController@postGenerate');
 
-Route::get('/lorem-test/{number}', function($number) {
-	$lipsum = new joshtronic\LoremIpsum();
-	return $lipsum->paragraphs($number);
-});
 
 Route::get('/random-users', 'UsersController@getOptions');
-Route::post('/random-users/result', 'UsersController@postGenerate');
+Route::post('/random-users', 'UsersController@postGenerate');
+
 
 ?>

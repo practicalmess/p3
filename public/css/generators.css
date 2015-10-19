@@ -3,10 +3,31 @@
 	padding-left: 2em;
 }
 
-/*Styling for div with generated Lorem Ipsum text*/
+
+/*Styling for div with results of generators*/
+
+.result {
+	margin: 1em auto;
+	width: 80%;
+}
+
+.result .btn {
+	width: 15em;
+	margin: 1em auto;
+	display: block;
+}
+
+.lorem-ipsum, .users {
+	border: 1px solid grey;
+	padding: .5em;
+}
 
 .lorem-ipsum {
-	border: 1px solid grey;
-	margin: 1em 0;
-	padding: .5em;
+	min-height: 20em;
+	width: 100%;
+}
+
+
+#results-head {
+	text-align: center;
 }
