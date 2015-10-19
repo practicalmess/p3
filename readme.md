@@ -1,6 +1,6 @@
 #P3 - Developer's Best Friend (a Laravel app)
 
-Live URL: [p3.sjhackney.me](p3.sjhackney.me)
+Live URL: [p3.sjhackney.me](http://p3.sjhackney.me)
 
 Demo: []()
 
