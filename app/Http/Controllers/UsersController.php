@@ -36,7 +36,7 @@ class UsersController extends Controller {
 					$users[$i]['cat'] =$faker->unique->imageUrl(100, 100, 'cats');
 		}
 
-		$saveFile = fopen(public_path("/users.json"), "w");
+		$saveFile = fopen(public_path("users.json"), "w");
 		fwrite($saveFile, json_encode($users));
 		fclose($saveFile);
 
