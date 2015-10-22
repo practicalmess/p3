@@ -30,7 +30,8 @@
 		<input type="hidden" value="{{ csrf_token() }}" name="_token">
 		<fieldset>
 			<label for="amount">How many users?</label>
-			<input type="text" id="amount" name="amount">
+			<input type="text" id="amount" name="amount" size="4" maxlength="2">
+				 (Max: 50)
 			<br>
 			<label for="type">Info to be included (name is included by default):</label>
 				<br>

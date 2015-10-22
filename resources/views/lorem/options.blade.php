@@ -36,7 +36,8 @@
 					<input type="radio" name="type" value="paragraphs">Paragraphs<br>
 				</div>
 			<label for="amount">How many?</label>
-			<input type="text" id="amount" name="amount">
+			<input type="text" id="amount" name="amount" size="4" maxlength="2">
+					 (Max: 99)
 		</fieldset>
 		<br>
 		<button type="submit" class="btn btn-primary">Generate text</button>
